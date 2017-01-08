@@ -65,30 +65,37 @@
       <div id="main">
           <div id="left">
               <h4>|最新留言</h4>
-              <ul>
+               <ul>
                 <?php if($result->rowCount()>0){
                   for($i=0;$i<8;$i++){
                     $row=$result->fetch(1); ?>
-                    <li>*<?= $row["title"] ?></li>
+                    <li>* <?=$row["title"] ?> </li>
                 <?  }
                 }
                 else echo "<p>目前还没有客户留言</p>";
                  ?>
                </ul>
               </div>
+              
+
+
       <!-- 首页动态日志本 -->
           <div id="right">
               <h4>|最新日志</h4>
-              <?php $result=$db->query("select * from artical order by id desc limit 2");
+               <?php $result=$db->query("select * from article order by id desc limit 2");
               if($result->rowCount()>0){
                 while($row=$result->fetch(1)){  ?>
                   <span class="date"><?=$row["date"] ?></span>
-                  <h5><?= $row["title"] ?></h5>
+                  <h5> <?=$row["title"] ?> </h5>
                   <br />
-                  <p><a href="article.php?id=<? $row["ID"]?>"><?= $row["content"]?></a></p>
-                  <hr /><?
-                 }
-              }?>
+                  <p><a href="article.php?id=<? $row["ID"]?>"><?= $row["contest"]?></a></p>
+                  <hr /> 
+                  <?
+              }}
+            else echo "<p>目前还没有日志</p>";
+              ?>
+              
+              
           </div>
 </div>
 </body>
