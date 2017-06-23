@@ -7,7 +7,7 @@ const Article = React.createClass({
             <div>
                 <h1>Article</h1>
                 <ul>
-                    <li><Link to="/">主页</Link></li>
+                    <li><Link to="/index">主页</Link></li>
                     <li><Link to="/msg">留言板</Link></li>
                     <li><Link to="/article">日志</Link></li>
                 </ul>
