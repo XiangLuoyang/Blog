@@ -3,11 +3,13 @@
     $Page=$_GET['page'];
   else $Page=1;
   $PageSize=4;
-  $result=$db->query("Select * from lyb order by ID desc");
-  $RecordCount=$result->rowCount();
-  echo '共有'.$RecordCount.'条留言';
-  //$PageCount=ceil($RecordCount/$PageSize);
-  //$result=$db->query("select * from lyb limit". ($Page-1)*$PageSize.",".$PageSize,$conn);
+  // $result1=$db->query("Select * from lyb order by ID desc");
+  // $result=$result1->rowCount();
+  $result=$db->query("Select count(id) from lyb");
+  $row=mysql_fetch_row($result);
+  $RecordCount=$row[0];
+  $PageCount=ceil($RecordCount/$PageSize);
+  $result=mysql_query("select * from lyb limit". ($Page-1)*$PageSize.",".$PageSize,$conn);
 ?>
 
 
@@ -122,7 +124,7 @@ color: #0000FF;
          while($row=$result->fetch(1)){?>
            <div id ="liuyan"><img src="img/<?= $row["sex"]?>.jpg" style="float:left;" width="100px" height="100px"/>
              <h3><?= $row["title"] ?></h3><p>作者：<?=$row["author"] ?></p>
-             <p>内容: <?= $row["context"]?> </p><p align="right">发表时间:
+             <p>内容: <?= $row["content"]?> </p><p align="right">发表时间:
                <?= $row["date"] ?> </p> </div>
                <?
          }
@@ -151,13 +153,27 @@ color: #0000FF;
                  <tr><td align="center">联系方式:</td>
                    <td><input type="text" name="email"></td></tr>
                     <tr><td align="center">留言内容:</td>
-                    <td><textarea name="context" cols="30" rows="3"></textarea></td></tr>
+                    <td><textarea name="content" cols="30" rows="3"></textarea></td></tr>
                     <tr><td></td>
                       <td><input type="submit" name="Submit" value="提交"></td></tr>
                     </tbody></table></form>
 
 
       </div>
-
+<p>
+  <?php
+  if($Page==1)
+    echo "第一页  上一页";
+  else echo "<a href='?page=1'>第一页</a> <a href='?page=".($Page-1)."'>上一页</a>";
+  for($i=1;$i<=$PageCount;$i++){
+    if($i==$Page) echo "$i";
+    else echo "<a href='?page=$i'>$i</a>";
+  }
+  if($Page==$PageCount)
+  echo "下一页  末页";
+  else echo "<a href ='?page=".($Page+1)."'>下一页</a> <a href='?page=".$PageCount."'>末页</a>";
+  echo "&nbsp 共".$RecordCount."条记录&nbsp";
+  echo "$Page / $PageCount 页";
+   ?></p>
 </body>
 </html>
