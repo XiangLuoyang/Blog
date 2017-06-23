@@ -7,6 +7,8 @@ import Welcome from './Welcome.js'
 import Article from './Article.js'
 import Message from './Message.js'
 import Topnav from './Topnav.js'
+import App from "./App.js"
+
 
 
 ReactDOM.render(
