@@ -8,7 +8,7 @@ const Topnav = React.createClass({
                 <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                     <div className="container">
                         <div className="navbar-header">
-                            <Link to="/index" className="navbar-brand">项罗阳的个人博客</Link>
+                            <Link to="/" className="navbar-brand">项罗阳的个人博客</Link>
                             <Link to="/index" className="navbar-brand">主页</Link>
                             <Link to="/msg" className="navbar-brand">留言板</Link>
                             <Link to="/article" className="navbar-brand">日志</Link>
