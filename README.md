@@ -7,6 +7,8 @@
 ├── config                      // 老版本的用php和bootstrap的项目
 └── blog                        // 正式开发的blog网页项目所在
 ```
+## Issues有关的说明:
+由于部落格还没搭建完成，文章已经有一些写好了(笑)，所以这些日志的内容将会放在issue中。点击[查看日志内容](https://github.com/XiangLuoyang/Xiang-s-Blog/issues)。
 ## 版本
 ### 测试版v0.1(当前版本)
 * React组件设计当中
