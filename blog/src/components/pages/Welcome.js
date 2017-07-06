@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Leftnav from './Leftnav.js'
-import Row from './Row.js'
+import Leftnav from '../util/Leftnav.js'
+import Row from '../util/Row.js'
 const Welcome = React.createClass({
     render() {
         return (

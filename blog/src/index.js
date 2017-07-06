@@ -5,12 +5,12 @@ import './index.css';
 import './static/css/basic.css';
 import { Router, Route, Link } from 'react-router'
 
-import Row from './components/Row.js'
-import Leftnav from './components/Leftnav.js'
-import Welcome from './components/Welcome.js'
-import Article from './components/Article.js'
-import Message from './components/Message.js'
-import Topnav from './components/Topnav.js'
+import Row from './components/util/Row.js'
+import Leftnav from './components/util/Leftnav.js'
+import Topnav from './components/util/Topnav.js'
+import Welcome from './components/pages/Welcome.js'
+import Article from './components/pages/Article.js'
+import Message from './components/pages/Message.js'
 import App from "./components/App.js"
 
 

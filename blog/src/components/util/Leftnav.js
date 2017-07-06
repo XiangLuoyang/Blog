@@ -6,7 +6,6 @@ const Leftnav = React.createClass({
         return (
             <div className="leftnav">
                 <div>
-                    <h1>Index</h1>
                     <ul className="nav flex-column">
                         <li className="nav-item">
                             <Link className="nav-link active" to="/index">主页</Link>
