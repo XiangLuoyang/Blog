@@ -1,25 +1,27 @@
 import React from 'react'
-import { Link } from 'react-router'
-import Leftnav from '../util/Leftnav.js'
-import Row from '../util/Row.js'
+import {Link} from 'react-router'
+import Leftnav from '../util/Leftnav.jsx'
+import Row from '../util/Row.jsx'
 const Welcome = React.createClass({
     render() {
         return (
             <div className="container">
                 <div className="Row">
                     <div className="main">
-213
+                        213
                     </div>
                     <div className="aside">
                         <div className="title">
                             个人介绍
                         </div>
-                        <div className="description">
-
-                        </div>
+                        <div className="description"></div>
                         <ul className="user-dynamic">
-                            <li><Link to="javascript:;">我关注的专题/文集</Link></li>
-                            <li><Link to="javascript:;">我喜欢的文章</Link></li>
+                            <li>
+                                <Link to="javascript:;">我关注的专题/文集</Link>
+                            </li>
+                            <li>
+                                <Link to="javascript:;">我喜欢的文章</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

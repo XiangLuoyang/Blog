@@ -1,6 +1,6 @@
 import React from 'react'
 import { Router, Route, Link } from 'react-router'
-import AddOneSecond from './AddOneSecond.js'
+import AddOneSecond from './AddOneSecond.jsx'
 const Topnav = React.createClass({
     render() {
         return (

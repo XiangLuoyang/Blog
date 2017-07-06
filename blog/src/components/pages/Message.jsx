@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Leftnav from '../util/Leftnav.js'
+import Leftnav from '../util/Leftnav.jsx'
 const Message = React.createClass({
     render() {
         return (
