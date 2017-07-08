@@ -22,5 +22,6 @@ class ArticleDisplay extends React.Component {
             </button>
         );
     }
-
 }
+
+export default ArticleDisplay;
