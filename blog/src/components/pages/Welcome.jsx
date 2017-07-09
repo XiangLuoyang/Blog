@@ -1,14 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router'
+import '../../static/css/basic.css';
 import Leftnav from '../util/Leftnav.jsx'
 import Row from '../util/Row.jsx'
+import ArticleDisplay from '../WelcomePage/ArticleDisplay.jsx'
 const Welcome = React.createClass({
     render() {
         return (
             <div className="container">
                 <div className="Row">
                     <div className="main">
-                        213
+                        <ul className="note-list">
+                            <li>
+                                <ArticleDisplay/>
+                            </li>
+                        </ul>
                     </div>
                     <div className="aside">
                         <div className="title">
