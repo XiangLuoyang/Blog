@@ -14,6 +14,12 @@ const Welcome = React.createClass({
                             <li>
                                 <ArticleDisplay/>
                             </li>
+                            <li>
+                                <ArticleDisplay/>
+                            </li>
+                            <li>
+                                <ArticleDisplay/>
+                            </li>
                         </ul>
                     </div>
                     <div className="aside">
