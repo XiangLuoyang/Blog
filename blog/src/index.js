@@ -10,6 +10,7 @@ import Leftnav from './components/util/Leftnav.jsx'
 import Topnav from './components/util/Topnav.jsx'
 import Welcome from './components/pages/Welcome.jsx'
 import Article from './components/pages/Article.jsx'
+import AddNewArticle from './components/Article/add_new_Article.jsx'
 import Message from './components/pages/Message.jsx'
 import App from "./components/App.js"
 
@@ -20,7 +21,8 @@ ReactDOM.render(
         <Route path="/" component={Topnav}>
             <Route path="index" component={Welcome} />
             <Route path="msg" component={Message} />
-            <Route path="article" component={Article} />
+            <Route path="article" component={Article}/>
+             <Route path="article/addArticle" component={AddNewArticle} />
         </Route>
     </Router>,
     document.getElementById('root')
