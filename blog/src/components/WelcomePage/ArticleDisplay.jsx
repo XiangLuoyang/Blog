@@ -3,19 +3,19 @@ import '../../static/css/basic.css';
 //用ES6的class语法声明一个组件
 class ArticleDisplay extends React.Component {
     //constructor：构造函数，初始化state
-    constructor(props) {
-        super(props);
-        this.state = {
-            message: 'Hello!'
-        };
-        // 这行很重要
-        this.handleClick = this
-            .handleClick
-            .bind(this);
-    }
-    handleClick() {
-        alert(this.state.message);
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         message: 'Hello!'
+    //     };
+    //     // 这行很重要
+    //     this.handleClick = this
+    //         .handleClick
+    //         .bind(this);
+    // }
+    // handleClick() {
+    //     alert(this.state.message);
+    // }
     render() {
         // Because `this.handleClick` is bound, we can use it as an event handler.
         return (
@@ -36,4 +36,4 @@ class ArticleDisplay extends React.Component {
     }
 }
 
-export default ArticleDisplay;
+export default ArticleDisplay
