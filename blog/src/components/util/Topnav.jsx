@@ -13,8 +13,8 @@ const Topnav = React.createClass({
                         <Link to="/msg" className="navbar-brand">留言板</Link>
                         <Link to="/article" className="navbar-brand">日志</Link>
                         <div className="user-space">
-                            <Link to="/log-in.jsx" className="navbar-brand">注册</Link>
-                            <Link to="/sign-in.jsx" className="navbar-brand">登录</Link>
+                            <Link to="/register" className="navbar-brand">注册</Link>
+                            <Link to="/sign-in" className="navbar-brand">登录</Link>
                         </div>
                     </div>
                 </nav>

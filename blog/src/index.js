@@ -13,6 +13,7 @@ import Article from './components/pages/Article.jsx'
 import AddNewArticle from './components/Article/add_new_Article.jsx'
 import Message from './components/pages/Message.jsx'
 import App from "./components/App.js"
+import Register from "./components/Users/register.jsx"
 
 
 
@@ -22,8 +23,9 @@ ReactDOM.render(
             <Route path="index" component={Welcome} />
             <Route path="msg" component={Message} />
             <Route path="article" component={Article}/>
-             <Route path="article/addArticle" component={AddNewArticle} />
+            <Route path="article/addArticle" component={AddNewArticle} />
         </Route>
+        <Route path="register" component={Register} />
     </Router>,
     document.getElementById('root')
 )

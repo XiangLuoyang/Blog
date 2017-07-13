@@ -1,0 +1,50 @@
+.root{
+    width:100%;
+}
+.typeInPlate{
+    position: absolute;
+    left:50%;
+    top:50%;
+    padding:10px 10px 10px 10px;
+    margin:-312.5px 0px 0px -200px;
+    background-color:#f1f1f1;
+    display:flex;
+    vertical-align: middle;
+    height:625px;
+    width:400px;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-container{
+    list-style: none;
+}
+.sign-up-msg{
+    width:300px;
+    height: 50px;
+    margin-left:-40px;
+    padding:40px;
+    font-size: 12px;
+    color:#969696;
+    line-height: 20p;
+    text-align: center;
+}
+.lis{
+    margin-left: -40px;
+    margin-bottom:1px;
+}
+.inputs{
+    padding-left: 10px;
+    width:300px;
+    height: 50px;
+    border:0px solid black;
+}
+.submit{
+    margin-top:20px;
+    margin-bottom:0px;
+    width:300px;
+    height: 50px;
+    border:0px solid black;
+    border-radius:4px;
+    font-size: 18px;
+    color: white;
+}
