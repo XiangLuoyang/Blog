@@ -32,9 +32,13 @@
     margin-left: -40px;
     margin-bottom:1px;
 }
+.board{
+    padding-left:10px;
+    background-color:white; 
+}
 .inputs{
     padding-left: 10px;
-    width:300px;
+    width:264px;
     height: 50px;
     border:0px solid black;
 }
@@ -42,14 +46,16 @@
     margin-top:20px;
     margin-bottom:0px;
     width:300px;
-    height: 50px;
+    height:50px;
     border:0px solid black;
     border-radius:4px;
     font-size: 18px;
     color: white;
 }
+
 .urls{
     position: relative;
     font-size: 40px;
     margin:0 55px 20px 25px;
+    cursor: pointer;
 }
