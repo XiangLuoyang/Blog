@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './user.css'
 import '../../static/css/iconfont.css'
 class Register extends React.Component {
+    handleClick(){
+        const root=this.refs.submit;
+        console.log(root);
+    }
     render() {
         return (
             <div className="root">
@@ -27,7 +31,7 @@ class Register extends React.Component {
                                 <input className="inputs sign-up-email" placeholder="绑定邮箱" type="text" />
                             </div>
                         </li>
-                        <li className="lis"><button className="submit">注册</button></li>
+                        <li className="lis"><button className="submit" ref="submit" onClick={() => this.handleClick()}>注册</button></li>
                         <p className="sign-up-msg">点击 “注册” 即表示您同意并愿意遵守简书用户协议 和 隐私政策 。</p>
                     </ul>
                 </div>  
