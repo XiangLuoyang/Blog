@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './user.css'
 import '../../static/css/iconfont.css'
-class Register extends React.Component {
+class SignIn extends React.Component {
     handleClick(){
         const root=this.refs.submit;
         root.setAttribute('class','submit bg-g')
