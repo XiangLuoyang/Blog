@@ -3,8 +3,7 @@ import './user.css'
 import '../../static/css/iconfont.css'
 class Register extends React.Component {
     handleClick(){
-        const root=this.refs.submit;
-        root.setAttribute('class','submit bg-g')
+        //这里设置的应该不是点击样式，而是一个验证功能，如果验证通过则不加以反应。如果不能通过，则阻止下一步。
     }
     render() {
         return (
@@ -31,7 +30,7 @@ class Register extends React.Component {
                                 <input className="inputs sign-up-email" placeholder="绑定邮箱" type="text" />
                             </div>
                         </li>
-                        <li className="lis"><button className="submit" ref="submit" onClick={() => this.handleClick()}>注册</button></li>
+                        <li className="lis"><button className="submit" onClick={() => this.handleClick()}>注册</button></li>
                         <p className="sign-up-msg">点击 “注册” 即表示您同意并愿意遵守简书用户协议 和 隐私政策 。</p>
                     </ul>
                 </div>  
